@@ -33,7 +33,6 @@ public:
     bool isCycleBFShepler(int src,vector<bool> &vis) //O(V+E)
     {
         queue<pair<int,int>> q;
-        vector<int> vis(v,false);
 
         q.push({src,-1});
         vis[src] = true;
@@ -66,7 +65,7 @@ public:
         {
             if(!vis[i])
             {
-                if(isCycleBFShepler(src,vis)) return true;
+                if(isCycleBFShepler(i,vis)) return true;
             }
         }
 
