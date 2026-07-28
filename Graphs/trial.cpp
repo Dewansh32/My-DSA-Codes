@@ -17,7 +17,7 @@ bool reverse_num(int x)
 
 int main()
 {
-    for(int i=100000;i<=999999;i++)
+    for(int i=10000;i<=99999;i++)
     {
         if(reverse_num(i)) cout<<i<<endl;
     }
