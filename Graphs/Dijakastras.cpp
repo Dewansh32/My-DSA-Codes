@@ -13,7 +13,7 @@ public:
 
     int Dj(int u,int target,vector<vector<Edge>> &graph)
     {
-        priority_queue<pair<int,int>,vector<pair<int,int>>,greater<pair<int,int>>> pq;
+        priority_queue<pair<int,int>,vector<pair<int,int>>,greater<pair<int,int>>> pq; 
         vector<int> dist(graph.size(),INT_MAX);
 
         pq.push({0,0});
